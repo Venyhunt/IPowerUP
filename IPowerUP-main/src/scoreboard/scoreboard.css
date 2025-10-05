@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  transition: .2s linear;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(../../images/homepage_newBg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow: visible;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.logo {
+  width: 70px;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.menu-icon {
+  width: 30px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  height: 88%;
+}
+
+.col {
+  flex-basis: 50%;
+}
+
+/* Main container styling */
+.leaderboard-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin-top: 80px;
+  /* Adjust margin for fixed navbar */
+}
+
+.leaderboard-box {
+  width: 850px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.leaderboard-box:hover {
+  transform: translateY(-10px);
+}
+
+/* Box decoration */
+.leaderboard-box::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  width: 160px;
+  height: 160px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.leaderboard-box::after {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  right: -80px;
+  width: 160px;
+  height: 160px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* Title styling */
+.leaderboard-box h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+/* Table styling for each leaderboard */
+.leaderboard-box table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.leaderboard-box td,
+.leaderboard-box th {
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: #555;
+}
+
+.leaderboard-box th {
+  background-color: rgb(38, 70, 158);
+  color: white;
+  font-weight: bolder;
+}
+
+.leaderboard-box tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.leaderboard-box tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.leaderboard-box tr:first-child td {
+  font-weight: bold;
+  color: #d4af37;
+  /* Gold for the first rank */
+}
+
+.share-btn {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  background-color: #5c5be5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.share-btn:hover {
+  background-color: #4a49d0;
+}

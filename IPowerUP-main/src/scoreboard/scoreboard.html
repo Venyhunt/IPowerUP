@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="scoreboard.css">
+    <link rel="stylesheet" href="/src/navbar/navbar-style.css">
+    <title>Leaderboard</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+          <h2><span>IPowerUp</span></h2>
+          <div class="nav-links">
+            <a href="/src/homepage/homepage.html" class="home">Home</a>
+            <div class="dropdown">
+              <a class="dropbtn">Categories</a>
+              <div class="dropdown-content">
+                <a href="/src/patent/patent.html">Patent</a>
+                <a href="/src/copyright/copyright.html">Copyright</a>
+                <a href="/src/trademark/trademark.html">Trademarks</a>
+                <a href="/src/tradesecret/tradesecret.html">Trade Secrets</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a class="dropbtn">Games</a>
+              <div class="dropdown-content">
+                <div class="dropdown-submenu">
+                  <a class="subdropbtn">Quiz ▸</a>
+                  <div class="submenu-content">
+                    <a href="/src/games/quiz/quiz.html?type=trademark">Trademark Quiz</a>
+                    <a href="/src/games/quiz/quiz.html?type=copyright">Copyright Quiz</a>
+                    <a href="/src/games/quiz/quiz.html?type=tradesecret">Trade Secret Quiz</a>
+                    <a href="/src/games/quiz/quiz.html?type=patent">Patent Quiz</a>
+                  </div>
+                </div>
+                <div class="dropdown-submenu">
+                  <a class="subdropbtn">Wordsearch ▸</a>
+                  <div class="submenu-content">
+                    <a href="/src/games/wordsearch/WordSearch.html?type=trademark">Trademark Wordsearch</a>
+                    <a href="/src/games/wordsearch/WordSearch.html?type=copyright">Copyright Wordsearch</a>
+                    <a href="/src/games/wordsearch/WordSearch.html?type=tradesecret">Trade Secret Wordsearch</a>
+                    <a href="/src/games/wordsearch/WordSearch.html?type=patent">Patent Wordsearch</a>
+                  </div>
+                </div>
+                <div class="dropdown-submenu">
+                  <a class="subdropbtn">Crossword ▸</a>
+                  <div class="submenu-content">
+                    <a href="/src/games/crossword/crossword.html?type=trademark">Trademark Crossword</a>
+                    <a href="/src/games/crossword/crossword.html?type=copyright">Copyright Crossword</a>
+                    <a href="/src/games/crossword/crossword.html?type=tradesecret">Trade Secret Crossword</a>
+                    <a href="/src/games/crossword/crossword.html?type=patent">Patent Crossword</a>
+                  </div>
+                </div>
+                <a href="/src/games/logoquiz/logoGame.html">Guess the Logo</a>
+              </div>
+            </div>
+          </div>
+          <div class="nav-buttons">
+            <a class="btn1" href="/src/scoreboard/scoreboard.html">Leaderboard</a>
+            <a class="btn" href="/index.html">Sign Out</a>
+            <a class="profile-pic" href="/src/profile/profile.html"><img src="/images/profile-pic.png"></a>
+          </div>
+        </nav>
+      </header>
+
+
+    <div class="leaderboard-container">
+        <div class="leaderboard-box" id="quiz-board">
+            <h2>Overall</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody id="overall"></tbody>
+            </table>
+        </div>
+
+        <div class="leaderboard-box" id="quiz-board">
+            <h2>Logo Tradesecret</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody id="logo-trademark"></tbody>
+            </table>
+        </div>
+
+        <div class="leaderboard-box" id="quiz-board">
+            <h2>Copyright Quiz</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody id="quizCopyright"></tbody>
+            </table>
+        </div>
+
+        <div class="leaderboard-box" id="quiz-board">
+            <h2>Quiz Patent</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody id="quizPatent"></tbody>
+            </table>
+        </div>
+
+        <div class="leaderboard-box" id="quiz-board">
+            <h2>Quiz Trademark</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody id="quizTrademark"></tbody>
+            </table>
+        </div>
+
+        <div class="leaderboard-box" id="quiz-board">
+            <h2>Quiz Tradesecret</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody id="quizTradesecret"></tbody>
+            </table>
+        </div>
+
+        <div class="leaderboard-box" id="wordsearch-board">
+            <h2>Wordsearch Copyright</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody id="wordsearchCopyright"></tbody>
+            </table>
+        </div>
+
+        <div class="leaderboard-box" id="wordsearch-board">
+            <h2>Wordsearch Patent</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody id="wordsearchPatent"></tbody>
+            </table>
+        </div>
+
+        <div class="leaderboard-box" id="wordsearch-board">
+            <h2>Wordsearch Trademark</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody id="wordsearchTrademark"></tbody>
+            </table>
+        </div>
+
+        <div class="leaderboard-box" id="wordsearch-board">
+            <h2>Wordsearch Tradesecret</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody id="wordsearchTradesecret"></tbody>
+            </table>
+        </div>
+
+
+        <div class="leaderboard-box" id="crossroad-board">
+            <h2>Crossword Copyright</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody id="crosswordCopyright"></tbody>
+            </table>
+        </div>
+
+        <div class="leaderboard-box" id="crossroad-board">
+            <h2>Crossword Patent</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody id="crosswordPatent"></tbody>
+            </table>
+        </div>
+
+        <div class="leaderboard-box" id="crossroad-board">
+            <h2>Crossword Trademark</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody id="crosswordTrademark"></tbody>
+            </table>
+        </div>
+
+        <div class="leaderboard-box" id="crossroad-board">
+            <h2>Crossword Tradesecret</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody id="crosswordTradesecret"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js"></script>
+    <script type="module" src="scoreboard.js"></script>
+</body>
+
+</html>
